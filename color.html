@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="color.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="color.css" />
+    <title>JIS慣用色名-色彩検定2級</title>
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <h1>JIS慣用色名</h1>
+      <h2>色彩検定2級</h2>
+      <canvas id="canvas" width="300" height="300"></canvas><br />
+
+      <script type="text/javascript">
+        const messages = [
+          //和色名
+          "#f4b3c2", //鴇色
+          "#e95464", //韓紅色
+          "#9e3d3e", //蘇芳
+          "#8b4239", //鳶色
+          "#814336", //海老茶
+          "#8f2d12", //弁柄色
+          "#ee7948", //黄丹
+          "#965036", //桧皮色
+          "#bb541f", //代赭
+          "#f6ad48", //柑子色
+          "#bf7834", //琥珀色
+          "#917347", //朽葉色
+          "#fabf13", //鬱金色
+          "#f5e56b", //刈安色
+          "#fef263", //黄蘗色
+          "#726d3f", //海松色
+          "#d7cf3a", //鶸色
+          "#007c45", //常盤色
+          "#4f8a5d", //緑青色
+          "#005242", //鉄色
+          "#64bcc7", //新橋色
+          "#007d92", //納戸色
+          "#a2d7dd", //甕覗き
+          "#2980af", //縹色
+          "#bbb7da", //藤色
+          "#734e95", //江戸紫
+          "#8C6589", //古代紫
+          "#afafb0", //銀鼠
+          "#a99e93", //茶鼠
+          "#7b8174", //利休鼠
+          "#6b5146", //煤竹色
+          //外来色名
+          "#f29c9f", //ローズピンク
+          "#561620", //バーガンディー
+          "#da8d93", //オールドローズ
+          "#e9474d", //ポピーレッド
+          "#6a1816", //マルーン
+          "#be6d55", //テラコッタ
+          "#b25532", //バーントシェンナ
+          "#d98032", //ローシェンナ
+          "#c1813f", //タン
+          "#f8eacf", //エクルベイジュ
+          "#f8b856", //ゴールデンイエロー
+          "#c28953", //アンバー
+          "#7a5e3d", //バーントアンバー
+          "#916f24", //ローアンバー
+          "#fdd75c", //ネープルスイエロー
+          "#ffdc00", //ジョンブリアン
+          "#d9e367", //シャトルーズグリーン
+          "#9dc04c", //リーフグリーン
+          "#7b8d41", //グラスグリーン
+          "#a2cc89", //アップルグリーン
+          "#98ce97", //ミントグリーン
+          "#009854", //マラカイトグリーン
+          "#005635", //ボトルグリーン
+          "#00a496", //ピーコックグリーン
+          "#259f94", //ナイルブルー
+          "#008db7", //セルリアンブルー
+          "#3a8daa", //サックスブルー
+          "#001d42", //ミッドナイトブルー
+          "#8e8bc2", //ウイスタリア
+          "#d1bada", //ライラック
+          "#636062", //スレートグレイ
+          "#24130d" //ランプブラック
+        ];
+
+        const messageNo = Math.floor(Math.random() * messages.length);
+        var color = messages[messageNo];
+      </script>
+
+      <a1 href="#" onclick="AnswerColor()" class="btn btn--circle"
+        ><br />答え<br
+      /></a1>
+
+      <a2 href="#" onclick="NextColor()" class="btn btn--circle"
+        ><br />次へ<br
+      /></a2>
+    </div>
+    <div style="text-align: right; font-size:80%">220903 Version 2.0</div>
+  </body>
+</html>
